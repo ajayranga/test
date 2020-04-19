@@ -1,0 +1,51 @@
+$skyBlue: #0cc5f3;
+$darkBlue: #021433;
+$lightBlue: #3d82ff;
+$darkVoilet: #2a2542;
+$lightSkyBlue: #9cc0da;
+$lightIvory: #3b7abd;
+$lightGrey: #cccccc;
+$mobPadding: 2rem 1rem;
+$tabPadding: 2rem;
+$deskPadding: 2rem 5rem 2rem 8.5rem;
+
+@font-face {
+  font-family: nexa-bold;
+  src: url(../fonts/Nexa-Bold.otf);
+}
+
+@font-face {
+  font-family: nexa-light;
+  src: url(../fonts/Nexa-Light.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: nexa-bold;
+  box-sizing: border-box;
+  color: $darkBlue;
+}
+
+body {
+  background: white;
+  padding: 0;
+  border-bottom: 1rem solid #3b7abd;
+}
+
+a {
+  font-family: nexa-light;
+  &:hover {
+    border-bottom: 1px solid blue;
+  }
+}
+
+button {
+  background-color: $darkBlue;
+  color: white;
+  border: none;
+}
+
+button.plus{
+  @include plusButton();
+}

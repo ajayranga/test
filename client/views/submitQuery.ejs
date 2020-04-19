@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./../partialViews/head') %>
+    <title>Submit Your Query</title>
+</head>
+
+<body>
+    <!-- Navigation Bar-->
+    <%- include('./../partialViews/navBar') %>
+
+    <section class="query formContainer">
+        <form action="" class="queryForm">
+            <h1>Submit your query</h1>
+            <div class="allInputs">
+                <div class="inputContainer">
+                    <input type="text" class="mn" placeholder="Enter Name" />
+                </div>
+                <div class="inputContainer">
+                    <input type="text" class="mn" placeholder="Enter Phone Number" />
+                </div>
+                <div class="inputContainer">
+                    <input type="email" placeholder="Enter Email" />
+                </div>
+                <div class="inputContainer txtareaContainer queryTxtareaContainer">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your query here"></textarea>
+                </div>
+                <div class="btnContainer">
+                    <button class="btn">
+                        <span>SUBMIT</span><i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer class="footer2">
+        <p>All Rights Reserved &copy; Tvastra 2020</p>
+    </footer>
+</body>
+<script type="text/javascript" src="../scripts/nevBar.js"></script>
+
+</html>

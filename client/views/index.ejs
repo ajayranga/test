@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./../partialViews/head') %>
+  <title>Homepage</title>
+</head>
+
+<body>
+  <!-- Navigation Bar-->
+  <%- include('./../partialViews/navBar') %>
+
+  <!--Search Section-->
+
+  <section class="searchWrapper" id="searchWrapper">
+    <h1>Find Affordable Healthcare</h1>
+    <p>
+      Join the thousands of others who have exercised their right to quality
+      healthcare at a price you can efford.
+    </p>
+    <div class="controls">
+      <div class="wrapper">
+        <button type="submit" id="locButton">
+          <i class="material-icons">place</i>
+        </button>
+        <input type="text" id="inputLoc" placeholder="Ahmedabad" autocomplete="off" />
+        <button class="submit" id="myLocButton">
+          <i class="material-icons">my_location</i>
+        </button>
+      </div>
+      <input type="text" id="inputSearch" placeholder="Search for doctors,hospitals and treatment" autocomplete="off" />
+      <button type="submit" id="searchButton">Search</button>
+    </div>
+  </section>
+
+  <!--How it Work Section-->
+
+  <section class="workWrapper" id="workWrapper">
+    <h2>How it works</h2>
+    <p>
+      Varoius facilities are provided here. But there is a protocol which
+      needs to be followed so that you may get the service at its best.
+    </p>
+    <div class="itemsWrapper">
+      <div class="itm itm1 active" id="itm1" onclick="info(0)">
+        <span>01</span>
+        <h3>Fix Consultation</h3>
+      </div>
+      <div class="info info1" id="info1">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" />
+        </div>
+        <h3>Fix Consultation</h3>
+        <p>
+          This depicts that user will have to fix appointment first when it
+          selects a particular doctor.
+        </p>
+      </div>
+      <div class="itm itm2" id="itm2" onclick="info(1)">
+        <span>02</span>
+        <h3>Upload Medical Reports</h3>
+      </div>
+      <div class="info info2" id="info2">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png" />
+        </div>
+        <h3>Uplaod Medical Reports</h3>
+        <p>
+          User can upload their previous Medical Reports online in case of any
+          previous treatments issues.
+        </p>
+      </div>
+      <div class="itm itm3" id="itm3" onclick="info(2)">
+        <span>03</span>
+        <h3>Consult with doctor</h3>
+      </div>
+      <div class="info info3" id="info3">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg" />
+        </div>
+        <h3>Consult with Doctor</h3>
+        <p>User can Consult with doctors online.</p>
+      </div>
+      <div class="itm itm4" id="itm4" onclick="info(3)">
+        <span>04</span>
+        <h3>Fix Surgery</h3>
+      </div>
+      <div class="info info4" id="info4">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg" />
+        </div>
+        <h3>Fix Surgery</h3>
+        <p>User are provided with surgery related facilities.</p>
+      </div>
+      <div class="itm itm5" id="itm5" onclick="info(4)">
+        <span>05</span>
+        <h3>Hospital sent estimates</h3>
+      </div>
+      <div class="info info5" id="info5">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img5.jpg" />
+        </div>
+        <h3>Hospital sent estimates</h3>
+        <p>User can know their Hospital sent estimated cost online.</p>
+      </div>
+      <div class="itm itm6" id="itm6" onclick="info(5)">
+        <span>06</span>
+        <h3>Payment</h3>
+      </div>
+      <div class="info info6" id="info6">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg" />
+        </div>
+        <h3>Payment</h3>
+        <p>
+          Online payment portal is also provided in case of any online
+          services.
+        </p>
+      </div>
+      <div class="itm itm7" id="itm7" onclick="info(6)">
+        <span>07</span>
+        <h3>Surgery Completed</h3>
+      </div>
+      <div class="info info7" id="info7">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg" />
+        </div>
+        <h3>Surgery Completed</h3>
+        <p>User get all their surgery related informations</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Doctors Section-->
+
+  <section class="doctorsWrapper" id="doctorsWrapper">
+    <h2>World class expert doctors!</h2>
+    <p class="about">
+      The University of Texas Southwestern Medical Center has been a long
+      world-renowned research hospital. But until the '80s. you couldn't go
+      there. Now. with the addition of the Aston Center and Zale Lipshy
+      Hospital. UT Southwestern is also a mecca for patient care.
+    </p>
+    <div class="boards">
+      <div class="board" id="board1">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" />
+        </div>
+        <ul class="list">
+          <li>
+            <h3 class="name">Duke Sanson</h3>
+          </li>
+          <li><span>Neuro Surgeon</span></li>
+          <li><span>Chain Department of Neurological Surgery</span></li>
+          <li><span>Australia</span></li>
+        </ul>
+      </div>
+      <div class="board" id="board2">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg" />
+        </div>
+        <ul class="list">
+          <li>
+            <h3 class="name">Georgea Peter</h3>
+          </li>
+          <li><span>Breast Cancer Surgeon</span></li>
+          <li><span>Director, UT Southwest</span></li>
+          <li><span>London</span></li>
+        </ul>
+      </div>
+      <div class="board" id="board3">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" />
+        </div>
+        <ul class="list">
+          <li>
+            <h3 class="name">Charlie Moon</h3>
+          </li>
+          <li><span>Cardiac Surgeon</span></li>
+          <li><span>MBBS, MD, FRCP, MRCP, Fellowship</span></li>
+          <li><span>New Delhi, India</span></li>
+        </ul>
+      </div>
+      <div class="board" id="board4">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg" />
+        </div>
+        <ul class="list">
+          <li>
+            <h3 class="name">Rose Moon</h3>
+          </li>
+          <li><span>Plastic Surgeon</span></li>
+          <li>
+            <span>Department of Plastic and Reconstructive Surgery</span>
+          </li>
+          <li><span>Dubai</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot active-dot" id="dot1"></span>
+      <span class="dot" id="dot2"></span>
+      <span class="dot" id="dot3"></span>
+      <span class="dot" id="dot4"></span>
+    </div>
+  </section>
+
+  <!--Treatment Section-->
+
+  <section class="treatmentWrapper" id="treatmentWrapper">
+    <h2>Featured Medical Treatments</h2>
+    <p>
+      The hospital provides various medical treatments done by our expert
+      doctors. Your health is our priority.
+    </p>
+    <div class="cards">
+      <div class="card card1" id="card1">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"
+            alt="Dentistry.jpg" />
+        </div>
+        <div class="content">
+          <h3>Dentistry</h3>
+          <span>50+ Specialists</span>
+        </div>
+      </div>
+      <div class="card card2" id="card2">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"
+            alt="Cancer.jpg" />
+        </div>
+        <div class="content">
+          <h3>Cancer</h3>
+          <span>50+ Specialists</span>
+        </div>
+      </div>
+      <div class="card card3" id="card3">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"
+            alt="Cardiology.jpg" />
+        </div>
+        <div class="content">
+          <h3>Cardiology Treatment</h3>
+          <span>50+ Specialists</span>
+        </div>
+      </div>
+      <div class="card card4" id="card4">
+        <div class="picContainer">
+          <img src="https://tvastra.s3.ap-south-1.amazonaws.com/doc.jpg" alt="Multi Organ.jpg" />
+        </div>
+        <div class="content">
+          <h3>Multi Organ Transplant</h3>
+          <span>50+ Specialists</span>
+        </div>
+      </div>
+      <div class="card card5" id="card5">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"
+            alt="Orthopedics.jpg" />
+        </div>
+        <div class="content">
+          <h3>Orthopedics Surgery</h3>
+          <span>50+ Specialists</span>
+        </div>
+      </div>
+      <div class="card card6" id="card6">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg"
+            alt="Infertility.jpg" />
+        </div>
+        <div class="content">
+          <h3>Infertility Treatment</h3>
+          <span>50+ Specialists</span>
+        </div>
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot active-dot" class="dot1"></span>
+      <span class="dot" id="dot2"></span>
+      <span class="dot" id="dot3"></span>
+    </div>
+  </section>
+
+  <!--Services Section-->
+
+  <section class="serviceWrapper" id="serviceWrapper">
+    <h2>Exclusive Services</h2>
+    <p>
+      We want you to be comfortable and thus apart from treating your illness,
+      we provide you with other services that can ease you.
+    </p>
+    <div class="cards">
+      <div class="item item1" id="item1">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png" />
+        </div>
+        <h3>TRAVEL</h3>
+      </div>
+      <div class="item item2" id="item2">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png" />
+        </div>
+        <h3>FOOD</h3>
+      </div>
+      <div class="item item3" id="item3">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png" />
+        </div>
+        <h3>ACCOMODATION</h3>
+      </div>
+      <div class="item item4" id="item4">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png" />
+        </div>
+        <h3>LABS</h3>
+      </div>
+      <div class="item item5" id="item5">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png" />
+        </div>
+        <h3>REPORTS</h3>
+      </div>
+      <div class="item item6" id="item6">
+        <div class="picContainer">
+          <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png" />
+        </div>
+        <h3>AMBULANCE</h3>
+      </div>
+    </div>
+  </section>
+
+  <!--Query Section-->
+
+  <section class="queryWrapper" id="queryWrapper">
+    <h2>Need Help?</h2>
+    <p>Just let us know. We will be happy to assist you.</p>
+    <button type="submit" id="queryButton">Submit your Query</button>
+  </section>
+
+  <!--Footer Section-->
+  <%- include('./../partialViews/footer') %>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsKJ_26cV1y7M4fR4LrxjvScGAPzPWGTk&libraries=places"></script>
+</body>
+<script type="text/javascript" src="../scripts/nevBar.js"></script>
+<script type="text/javascript" src="../scripts/work.js"></script>
+<script type="text/javascript" src="../scripts/map.js"></script>
+
+</html>

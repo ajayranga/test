@@ -1,0 +1,49 @@
+@mixin appointmentButton() {
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.6rem 2.5rem;
+  @media only screen and (min-width: 1024px) {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+  }
+}
+
+@mixin queryButton {
+  border: none;
+  margin: auto;
+  background-color: $lightIvory;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  @media only screen and (min-width: 1024px) {
+    font-size: 1.6rem;
+    font-family: nexa-light;
+    padding: 1.8rem 6rem;
+    font-weight: bold;
+  }
+}
+@mixin navBtn() {
+  color: $darkBlue;
+  border: 0.08rem solid $darkBlue;
+  padding: 1.1rem 0rem;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  font-family: nexa-light;
+  color: white;
+}
+
+@mixin plusButton {
+  background-color: $lightBlue;
+  font-family: sans-serif;
+  font-weight: 800;
+  padding: 0.5rem;
+  color: whitesmoke;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  @media only screen and (min-width:1024px) {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./../partialViews/head') %>
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <!-- Navigation Bar-->
+  <%- include('./../partialViews/navBar') %>
+
+  <section class="signup formContainer">
+    <form action="" type="post" class="signupForm">
+      <h1>Sign Up</h1>
+      <div class="allInputs">
+        <div class="inputContainer">
+          <input type="text" placeholder="Enter Name" />
+        </div>
+        <div class="inputContainer">
+          <input type="text" placeholder="Enter Email" />
+        </div>
+        <div class="inputContainer">
+          <input type="password" placeholder="Enter Password" />
+        </div>
+        <div class="inputContainer">
+          <select name="gender" id="gender">
+            <option value="" disabled selected hidden>Select your gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="inputContainer">
+          <input type="date" name="dateTime" id="" />
+        </div>
+        <div class="inputContainer">
+          <input type="text" placeholder="Enter Phone Number" />
+        </div>
+        <div class="addr">
+          <div class="inputContainer">
+            <input type="text" placeholder="Enter City" />
+          </div>
+          <div class="inputContainer">
+            <input type="text" placeholder="Enter State" />
+          </div>
+        </div>
+        <div class="inputContainer">
+          <select name="Country" id="Country">
+            <option value="" disabled selected hidden>Select your Country</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="btnContainer">
+          <button class="btn">
+            <span>SIGN UP</span> <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <span class="txt">Already Registered?<a href="login.html">Login</a></span>
+    </form>
+  </section>
+  <footer class="footer2">
+    <p>All Rights Reserved &copy; Tvastra 2020</p>
+  </footer>
+</body>
+<script type="text/javascript" src="../scripts/nevBar.js"></script>
+
+</html>

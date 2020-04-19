@@ -1,0 +1,103 @@
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(44, 120, 183, 0.8),
+      rgba(212, 212, 223, 0)
+    ),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 5rem 1rem;
+  text-align: center;
+  .text {
+    h1,
+    span {
+      color: #fff;
+    }
+  }
+}
+.heroDoctor,
+.heroHospital {
+  display: none;
+}
+.heroContact,
+.heroAboutDoc,
+.heroFaq,
+.heroAboutHospital {
+  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
+}
+.heroAbout {
+  background-image: linear-gradient(rgba(26, 26, 26, 0.5)),
+    url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
+  padding: 10rem 1rem;
+}
+.heroTvastra {
+  padding: 3rem 1rem 12rem 1rem;
+  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/task30-tvastra-plus/tvastraPlus_heroSection.webp");
+  background-position: left;
+  .text {
+    .btnContainer {
+      margin-bottom: 1.5rem;
+      .plus {
+        @include plusButton();
+      }
+    }
+    h1,
+    span {
+      color: $darkBlue;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .heroDoctor,
+  .heroHospital {
+    display: block;
+    padding: 5rem 2rem;
+    text-align: left;
+    background-image: linear-gradient(rgba(166, 183, 195, 0.6)),
+      url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png");
+    background-position: center;
+    .text {
+      h1 {
+        color: $darkBlue;
+        font-family: sans-serif;
+        a {
+          margin: 0 1rem;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .heroTvastra{
+    padding-left: 2rem;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero {
+    padding: 5rem 8.5rem;
+    text-align: left;
+  }
+  .heroDoctor,
+  .heroHospital {
+    display: block;
+    .text {
+      h1 {
+        font-family: nexa-light;
+        a {
+          font-size: 2.3rem;
+          font-family: nexa-bold;
+        }
+      }
+    }
+  }
+  .heroAbout {
+    text-align: center;
+    padding: 10rem 0;
+  }
+  .heroTvastra{
+    padding-bottom: 15rem;
+  }
+}

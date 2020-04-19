@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./../partialViews/head') %>
+  <title>Book Appointment</title>
+</head>
+
+<body>
+  <!-- Navigation Bar-->
+  <%- include('./../partialViews/navBar') %>
+
+  <section class="appointment formContainer">
+    <form action="" class="appointmentForm">
+      <h1>Book an Appointment</h1>
+      <div class="allInputs">
+        <div class="item item1">
+          <h3>Select Appointment Date*</h3>
+          <div class="inputContainer dateContainer">
+            <input type="date" name="dateTime" id="" />
+          </div>
+        </div>
+        <div class="item item2">
+          <h3>Time Internal*</h3>
+          <div class="inputContainer radioContainer">
+            <input type="radio" name="time" id="Morning" value="Morning" /><label for="Morning">Morning</label>
+            <input type="radio" name="time" id="Afternoon" value="Afternoon" /><label for="Afternoon">Afternoon</label>
+            <input type="radio" name="time" id="Evening" value="Evening" /><label for="Evening">Evening</label>
+          </div>
+        </div>
+        <div class="item item3">
+          <h3>Appointment Status/Urgency*</h3>
+          <div class="inputContainer radioContainer">
+            <input type="radio" name="status" id="Routine" value="Routine" /><label for="Routine">Routine
+              Check-up</label>
+            <input type="radio" name="status" id="Non-Urgent" value="Non-Urgent" /><label for="Non-Urgent">Non Urgent
+              Check-up</label>
+            <input type="radio" name="status" id="Urgent" value="Urgent" /><label for="Urgent">Urgent Check-up</label>
+            <input type="radio" name="status" id="Surgical" value="Surgical" /> <label for="Surgical">Surgical
+              Apponitment</label>
+          </div>
+        </div>
+        <div class="item item4">
+          <h3>Upload Previous Health Record*</h3>
+          <div class="inputContainer fileContainer">
+            <input type="file" id="" />
+          </div>
+        </div>
+        <div class="item item5">
+          <h3>Appointment Details*</h3>
+          <div class="inputContainer txtareaContainer appointmentTxtareaContainer">
+            <textarea name="details" id="" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="item item6">
+          <div class="btnContainer">
+            <button class="btn"><span>BOOK APPOINTMENT</span>
+              <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+  <footer class="footer2">
+    <p>All Rights Reserved &copy; Tvastra 2020</p>
+  </footer>
+</body>
+<script type="text/javascript" src="../scripts/nevBar.js"></script>
+
+</html>

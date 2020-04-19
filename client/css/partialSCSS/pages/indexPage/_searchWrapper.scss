@@ -1,0 +1,110 @@
+.searchWrapper {
+  padding: $mobPadding;
+  background-color: $lightSkyBlue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+
+      button {
+        background-color: white;
+        padding: 0.3rem;
+        height: 2.6rem;
+        width: 2rem;
+        overflow: hidden;
+        i {
+          font-size: 1.2rem;
+          color: #000;
+        }
+      }
+    }
+
+    > button {
+      margin: 0.5rem auto;
+      padding: 0.8rem;
+      width: 8rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .searchWrapper {
+    padding: $tabPadding;
+    background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .controls {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 0.5rem;
+
+      .wrapper {
+        width: 15rem;
+      }
+
+      > input {
+        border-left: 1px solid $lightGrey;
+        padding: 0 1rem;
+        width: 21.5rem;
+      }
+
+      > button {
+        width: 7rem;
+        margin: 0;
+        height: 2.6rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .searchWrapper {
+    text-align: left;
+    padding: 10rem 5rem 10rem 8.5rem;
+    display: block;
+    p {
+      width: 50%;
+    }
+
+    .controls {
+      margin-top: 2rem;
+      padding: 0;
+      .wrapper {
+        margin: 0;
+        width: 24rem;
+        input {
+          height: 4rem;
+        }
+        button {
+          height: 4rem;
+          width: 6rem;
+          i {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      input {
+        height: 4rem;
+        width: 32.5rem;
+      }
+
+      button {
+        height: 4rem;
+        font-family: nexa-light;
+        width: 14rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+.content {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  .picContainer {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .picContainer1 {
+    width: 50%;
+  }
+}
+
+.stats {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  padding: 2rem 1rem 0 1rem;
+  .video_container {
+    display: none;
+  }
+  h2,
+  p {
+    color: #ffffff;
+  }
+
+  .btn {
+    @include queryButton();
+  }
+
+  .list {
+    padding: 1.5rem 0;
+    li {
+      border: 0.05rem solid grey;
+      margin-bottom: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      padding: 1.2rem;
+
+      :nth-child(odd) {
+        font-size: 2rem;
+        font-family: nexa-bold;
+        margin-bottom: 0;
+      }
+      h3,
+      span {
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    padding: 2rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    .picContainer {
+      margin-left: 0;
+      img {
+        object-fit: contain;
+      }
+    }
+    .picContainer2 {
+      grid-column: 2/3;
+      grid-row: 1/5;
+    }
+  }
+
+  .stats {
+    padding: 2rem;
+    text-align: left;
+
+    .btn {
+      margin: 1.5rem 0;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 33% auto 33%;
+      column-gap: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .content {
+    padding: 3rem 5rem 2rem 8.5rem;
+    grid-template-columns: 44vw auto;
+    .picContainer2 {
+      grid-row: 1/2;
+      height: 29rem;
+      img {
+        width: min-content;
+      }
+    }
+    .picContainer1 {
+        height: 5rem;
+      img {
+        width: min-content;
+      }
+    }
+  }
+  .stats {
+    position: relative;
+    background: none;
+    padding: 2rem 5rem 2rem 8.5rem;
+    display: grid;
+    grid-template-columns: 60% auto;
+    .video_container {
+      display: block;
+      position: absolute;
+      z-index: -9999;
+      width: 100%;
+      height: 100%;
+      video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .btn {
+      margin: 1rem auto 1rem 0;
+    }
+    .list {
+      grid-column: 2/3;
+      grid-row: 1/4;
+    }
+  }
+}

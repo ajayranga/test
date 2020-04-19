@@ -1,0 +1,518 @@
+section.choosePlan {
+  background: linear-gradient(to bottom, $lightSkyBlue, white);
+  padding: 1rem;
+  .container {
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1rem 0 1rem;
+    margin-top: -12.5rem;
+    box-shadow: inset 0 0 0.2rem grey;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    .plans {
+      border-top: 0.06rem solid $lightGrey;
+      .plan {
+        padding: 1rem 2rem 2rem 2rem;
+        .feature {
+          border-top: 0.06rem solid $lightGrey;
+          padding: 1rem 2rem 0 2rem;
+          height: 20rem;
+        }
+        .price {
+          span {
+            margin: 0;
+            display: unset;
+          }
+        }
+        h4 {
+          color: $lightBlue;
+          font-family: nexa-bold;
+        }
+        .btnContainer {
+          margin: 1rem 0 0 0;
+          .plus {
+            @include plusButton();
+          }
+        }
+      }
+      .popular {
+        position: relative;
+        background: linear-gradient(to bottom, $lightSkyBlue, white);
+        &::before {
+          content: "Popular";
+          color: white;
+          padding: 0.4rem 0.5rem;
+          background-color: green;
+          font-size: 0.7rem;
+          font-family: nexa-bold;
+          position: absolute;
+          top: -0.5rem;
+          left: 42%;
+          border-radius: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+section.rating {
+  padding: 2rem 1rem;
+  text-align: center;
+  .starContainer {
+    padding: 1rem 0 0 0;
+    .average {
+      h2 {
+        color: $lightBlue;
+        font-size: 3rem;
+      }
+      .stars {
+        padding: 0.5rem 0 0 0;
+        i {
+          color: $lightBlue;
+        }
+      }
+      span {
+        color: $lightBlue;
+      }
+    }
+    .ratingBarContainer {
+      display: flex;
+      flex-direction: column;
+      li {
+        display: flex;
+        align-self: center;
+        padding: 0.25rem 0;
+        span {
+          color: $lightBlue;
+          font-weight: bolder;
+          margin: 0 1rem 0 0;
+          font-size: 1rem;
+        }
+        .emptyBar {
+          width: 14rem;
+          height: 1rem;
+          background-color: $lightGrey;
+          border-radius: 1rem;
+          .filledBar {
+            border-radius: 1rem;
+            height: 100%;
+            background-color: $lightBlue;
+          }
+        }
+      }
+      .rating1 {
+        .emptyBar {
+          .filledBar {
+            width: 75%;
+          }
+        }
+      }
+      .rating2 {
+        .emptyBar {
+          .filledBar {
+            width: 35%;
+          }
+        }
+      }
+      .rating3 {
+        .emptyBar {
+          .filledBar {
+            width: 35%;
+          }
+        }
+      }
+      .rating4 {
+        .emptyBar {
+          .filledBar {
+            width: 25%;
+          }
+        }
+      }
+      .rating5 {
+        .emptyBar {
+          .filledBar {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+  .about {
+    display: grid;
+    padding: 1.5rem 0 0 0;
+    grid-template-columns: 50% auto;
+    li {
+      i {
+        font-size: 2.2rem;
+        color: $lightBlue;
+      }
+      h3,
+      span {
+        color: $lightBlue;
+      }
+    }
+  }
+}
+
+section.benefit {
+  padding: 0 1rem;
+  text-align: center;
+  color: $darkBlue;
+  .first {
+    width: 19rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: 0.3rem solid $lightSkyBlue;
+    margin-bottom: 1rem;
+  }
+  .benefitContent {
+    .row {
+      padding: 0rem 0 2rem 0;
+      .column1 {
+        ul {
+          li {
+            margin-left: 2rem;
+            text-align: left;
+            position: relative;
+            &::before {
+              content: "\f058";
+              font-family: "Font Awesome 5 Free";
+              color: white;
+              background-color: $lightSkyBlue;
+              border-radius: 1rem;
+              font-size: 1.5rem;
+              position: absolute;
+              left: -2rem;
+            }
+          }
+        }
+      }
+      .column2 {
+        .allImages {
+          display: grid;
+          grid-template-columns: 50% auto;
+          .picContainer {
+            padding: 1rem;
+            height: 6rem;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+          .picContainer1 {
+            border-right: 0.03rem solid $lightSkyBlue;
+            border-bottom: 0.03rem solid $lightSkyBlue;
+          }
+          .picContainer2 {
+            border-bottom: 0.03rem solid $lightSkyBlue;
+          }
+          .picContainer3 {
+            border-right: 0.03rem solid $lightSkyBlue;
+            border-bottom: 0.03rem solid $lightSkyBlue;
+          }
+
+          .picContainer4 {
+            border-bottom: 0.03rem solid $lightSkyBlue;
+          }
+          .picContainer5 {
+            border-right: 0.03rem solid $lightSkyBlue;
+          }
+        }
+        > .picContainer {
+          border-radius: 1rem;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.tests {
+  text-align: center;
+  padding: 0 1rem;
+  h3 {
+    margin-bottom: 1rem;
+  }
+  .testList {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 50% auto;
+    column-gap: 0.7rem;
+    row-gap: 0.7rem;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      height: 12rem;
+      padding: 1.2rem 0;
+      box-shadow: 0 0 0.3rem grey;
+      .picContainer {
+        height: 3rem;
+        width: 3rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      span {
+        margin-top: 0;
+      }
+    }
+  }
+  .dots {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    .dot {
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 0.6rem;
+      background-color: $lightGrey;
+      margin: 0.3rem;
+    }
+    .activeDot {
+      background-color: $lightBlue;
+    }
+  }
+}
+
+section.review {
+  padding: 1rem;
+  h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .btnContainer {
+      margin-left: 0.5rem;
+    }
+  }
+  .reviewList {
+    padding: 1rem 0 0 0;
+    .item {
+      box-shadow: 0 0 0.3rem grey;
+      padding: 1rem;
+      margin-bottom: 0.7rem;
+      p {
+        font-family: nexa-bold;
+        margin-top: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 5rem auto;
+        .picContainer {
+          grid-row: 1/3;
+          align-self: center;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 4rem;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+        h3 {
+          margin: 0;
+          align-self: center;
+        }
+        .btnContainer {
+          align-self: center;
+          button.btn {
+            background-color: $lightSkyBlue;
+            color: $lightBlue;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section.choosePlan {
+    padding: 2rem;
+    .container {
+      .plans {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        .plan {
+          padding: 1rem 0rem;
+          .feature {
+            height: 22rem;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+  section.rating {
+    padding: 2rem;
+    .starContainer {
+      display: grid;
+      grid-template-columns: auto auto;
+      div {
+        align-self: center;
+      }
+    }
+    .about {
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  section.benefit {
+    padding: 0 2rem;
+    .benefitContent {
+      .row {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 1rem;
+        .column2 {
+          .picContainer {
+            height: 100%;
+          }
+        }
+      }
+      .row2 {
+        .column1 {
+          grid-column: 2/3;
+        }
+        .column2 {
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+      }
+      .row4 {
+        .column1 {
+          grid-column: 2/3;
+        }
+        .column2 {
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+      }
+    }
+  }
+  section.tests {
+    padding: 0rem 2rem;
+    h3 {
+      text-align: left;
+    }
+    .testList {
+      li {
+        padding: 2rem;
+        height: 100%;
+        .picContainer {
+          height: 5rem;
+          width: 5rem;
+        }
+      }
+    }
+  }
+  section.review {
+    padding: 0 2rem;
+    h2 {
+      justify-content: start;
+    }
+    .reviewList {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 0.7rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.choosePlan {
+    padding: 2rem 5rem 4rem 8.5rem;
+    .container {
+      margin-top: -15rem;
+      padding: 0;
+      box-shadow: 0 0 3rem grey;
+      .plans {
+        border-top: none;
+        .plan {
+          padding: 1rem 5rem 4rem 5rem;
+          .feature {
+            height: 17rem;
+          }
+          h4 {
+            padding: 1rem 0;
+          }
+        }
+        .popular {
+          &::before {
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            top: -1rem;
+          }
+        }
+      }
+    }
+  }
+  section.rating {
+    padding: 2rem 5rem 2rem 8.5rem;
+    p {
+      width: 50%;
+      margin: 2rem auto;
+    }
+    .starContainer {
+      justify-content: center;
+      column-gap: 7rem;
+      .ratingBarContainer {
+        li {
+          .emptyBar {
+            height: 1.5rem;
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+  section.benefit {
+    padding: 2rem 5rem 2rem 8.5rem;
+    .benefitContent {
+      .row {
+        column-gap: 5rem;
+        .column1 {
+          text-align: left
+        }
+        .column2{
+          .picContainer{
+            height: 17rem;
+          }
+        }
+      }
+    }
+  }
+  section.tests {
+    padding: 0rem 5rem 2rem 8.5rem;
+    h3 {
+      padding: 1rem;
+    }
+    .testList {
+      grid-template-columns: auto auto auto auto;
+      li{
+        align-items: flex-start;
+        h3{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  section.review {
+    padding: 0rem 5rem 2rem 8.5rem;
+    .reviewList {
+      grid-template-columns: auto auto auto;
+    }
+  }
+}

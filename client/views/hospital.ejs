@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./../partialViews/head') %>
+  <title>Hospital</title>
+</head>
+
+<body>
+  <!-- Navigation Bar-->
+  <%- include('./../partialViews/navBar') %>
+
+  <section class="hero heroHospital">
+    <div class="text">
+      <h1>Hospitals in <a href="#">Delhi</a></h1>
+    </div>
+  </section>
+
+  <section class="menu">
+    <span class="lst">Home / Doctor List</span>
+    <select class="sort" id="sortButton">
+      <option value="" selected>Sort By</option>
+      <option value="name">Name</option>
+      <option value="name">Experience</option>
+      <option value="name">Location</option>
+    </select>
+  </section>
+
+  <section class="main mainHospital">
+    <div class="sidebar" id="sideBar">
+      <div class="filter">
+        <h4>Filter By</h4>
+        <ul class="filterList">
+          <li>DLF Cyber City</li>
+          <li>Muti Organ Transplant</li>
+          <li>Apollo Hospital</li>
+          <li>30+</li>
+        </ul>
+      </div>
+      <div class="sub sub1" id="sub1">
+        <p class="head"><span>Location</span><i class="fas fa-search"></i></p>
+        <ul class="elements">
+          <li>
+            <input type="checkbox" name="" id="dlf" />
+            <label for="dlf">DLF Cyber City</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="dwarka" />
+            <label for="dwarka">Dwarka</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="lajpat" />
+            <label for="lajpat">Lajpat Nagar</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="palm" />
+            <label for="palm">Palam Vihar</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="punjabi" />
+            <label for="punjabi">Punjabi Baag</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="pusa" />
+            <label for="pusa">Pusa Road</label>
+          </li>
+        </ul>
+      </div>
+      <div class="sub sub2" id="sub2">
+        <p class="head">
+          <span>Treatment</span><i class="fas fa-search"></i>
+        </p>
+        <ul class="elements">
+          <li>
+            <input type="checkbox" name="" id="mot" />
+            <label for="mot">Multi Organ Transplant</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="ortho" />
+            <label for="ortho">Orthopedic Surgery</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="infertility" />
+            <label for="infertility">Infertility Treatment</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="Dentistry" />
+            <label for="Dentistry">Dentistry</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="Cardiology" />
+            <label for="Cardiology">Cardiology</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="Cancer" />
+            <label for="Cancer">Cancer</label>
+          </li>
+        </ul>
+      </div>
+      <div class="sub sub3" id="sub3">
+        <p class="head">
+          <span>Hospitals</span><i class="fas fa-search"></i>
+        </p>
+        <ul class="elements">
+          <li>
+            <input type="checkbox" name="" id="apollo" />
+            <label for="apollo">Apollo Hospital</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="manipat" />
+            <label for="manipat">Manipat North Side Hospital</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="Northstar" />
+            <label for="Northstar">Northstar</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="AIIMs" />
+            <label for="AIIMs">AIIMs</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="fortis" />
+            <label for="fortis">Fortis Hospital</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="elbit" />
+            <label for="elbit">Elbit Diagnostics</label>
+          </li>
+        </ul>
+      </div>
+      <div class="sub sub4" id="sub4">
+        <p class="head">
+          <span>Years of Experience</span><i class="fas fa-search"></i>
+        </p>
+        <ul class="elements">
+          <li>
+            <input type="checkbox" name="" id="30+" />
+            <label for="30+">30+</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="25+" />
+            <label for="25+">25+</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="20+" />
+            <label for="20+">20+</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="15+" />
+            <label for="15+">15+</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="10+" />
+            <label for="10+">10+</label>
+          </li>
+          <li>
+            <input type="checkbox" name="" id="5+" />
+            <label for="5+">5+</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card card1" id="card1">
+        <h2>Apollo Hospital</h2>
+        <ul class="info">
+          <li class="op">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-bed"></i>
+            <span>100 beds</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-stethoscope"></i>
+            <span>Famous Treatments</span>
+          </li>
+        </ul>
+        <ul class="spcl">
+          <li>Multi Organ Transplant</li>
+          <li>Orthopadic Surgery</li>
+          <li>Infertility Treatment</li>
+          <li>Destistry</li>
+          <li>Cardiology</li>
+          <li>Cancer</li>
+          <li>+ 40 more</li>
+        </ul>
+        <div class="btnContainer hsptBtnContainer">
+          <button class="btn">Call Now</button>
+        </div>
+        <div class="picContainer hsptPicContainer">
+          <img src="https://tvastra.s3.ap-south-1.amazonaws.com/hospital1.png" alt="IAH" />
+        </div>
+      </div>
+      <div class="card card2" id="card2">
+        <h2>Fortis Hospital</h2>
+        <ul class="info">
+          <li class="op">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-bed"></i>
+            <span>100 beds</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-stethoscope"></i>
+            <span>Famous Treatments</span>
+          </li>
+        </ul>
+        <ul class="spcl">
+          <li>Multi Organ Transplant</li>
+          <li>Orthopadic Surgery</li>
+          <li>Infertility Treatment</li>
+          <li>Destistry</li>
+          <li>Cardiology</li>
+          <li>Cancer</li>
+          <li>+ 40 more</li>
+        </ul>
+        <div class="btnContainer hsptBtnContainer">
+          <button class="btn">
+            Call Now
+          </button>
+        </div>
+
+        <div class="picContainer hsptPicContainer">
+          <img src="https://tvastra.s3.ap-south-1.amazonaws.com/hospital2.png" alt="FH" />
+        </div>
+      </div>
+      <div class="card card3" id="card3">
+        <h2>Rockland Hospital</h2>
+        <ul class="info">
+          <li class="op">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-bed"></i>
+            <span>100 beds</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-stethoscope"></i>
+            <span>Famous Treatments</span>
+          </li>
+        </ul>
+        <ul class="spcl">
+          <li>Multi Organ Transplant</li>
+          <li>Orthopadic Surgery</li>
+          <li>Infertility Treatment</li>
+          <li>Destistry</li>
+          <li>Cardiology</li>
+          <li>Cancer</li>
+          <li>+ 40 more</li>
+        </ul>
+        <div class="btnContainer hsptBtnContainer">
+          <button class="btn">
+            Call Now
+          </button>
+        </div>
+
+        <div class="picContainer hsptPicContainer">
+          <img src="https://tvastra.s3.ap-south-1.amazonaws.com/hospital3.png" alt="RH" />
+        </div>
+      </div>
+      <div class="card card4" id="card4">
+        <h2>Primus Spr. Speciality Hospital</h2>
+        <ul class="info">
+          <li class="op">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Delhi Mathura Road, Sarita Vihar, Delhi 110076</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-bed"></i>
+            <span>sdfsf</span>
+          </li>
+          <li class="op">
+            <i class="fas fa-stethoscope"></i>
+            <span>Famous Treatments</span>
+          </li>
+        </ul>
+        <ul class="spcl">
+          <li>Multi Organ Transplant</li>
+          <li>Orthopadic Surgery</li>
+          <li>Infertility Treatment</li>
+          <li>Destistry</li>
+          <li>Cardiology</li>
+          <li>Cancer</li>
+          <li>+ 40 more</li>
+        </ul>
+        <div class="btnContainer hsptBtnContainer">
+          <button class="btn">
+            Call Now
+          </button>
+        </div>
+
+        <div class="picContainer hsptPicContainer">
+          <img src="https://tvastra.s3.ap-south-1.amazonaws.com/hospital4.png" alt="PSSH" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Query Section-->
+
+  <section class="queryWrapper" id="queryWrapper">
+    <h2>Need Help?</h2>
+    <p>Just let us know. We will be happy to assist you.</p>
+    <button type="submit" id="queryButton">Submit your Query</button>
+  </section>
+
+  <!--Footer Section-->
+  <%- include('./../partialViews/footer') %>
+</body>
+<script type="text/javascript" src="../scripts/nevBar.js"></script>
+
+</html>

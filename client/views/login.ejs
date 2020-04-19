@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./../partialViews/footer') %>
+  <title>Login</title>
+</head>
+
+<body>
+  <!-- Navigation Bar-->
+  <%- include('./../partialViews/navBar') %>
+
+  <section class="login formContainer">
+    <form action="" class="login_form">
+      <h1>Login</h1>
+      <div class="allInputs">
+        <div class="inputContainer">
+          <input type="text" class="mn" placeholder="Enter Mobile Number" />
+          <i class="fas fa-question-circle"></i>
+        </div>
+        <div class="inputContainer">
+          <input type="password" placeholder="Enter OTP" />
+        </div>
+        <div class="btnContainer">
+          <button class="btn">
+            <span>LOGIN</span><i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <span class="txt">Not Register?<a href="signup.html">Sign Up</a></span>
+    </form>
+  </section>
+  <footer class="footer2">
+    <p>All Rights Reserved &copy; Tvastra 2020</p>
+  </footer>
+</body>
+<script type="text/javascript" src="../scripts/nevBar.js"></script>
+
+</html>
